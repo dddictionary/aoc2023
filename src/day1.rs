@@ -5,7 +5,7 @@ use std::collections::HashMap;
 fn main() {
     //read file
     part_one();
-    
+    part_two();
 }
 
 #[derive(Debug)]
@@ -27,16 +27,6 @@ impl NumberMapping {
         map.insert("seven".to_string(), 7);
         map.insert("eight".to_string(), 8);
         map.insert("nine".to_string(), 9);
-        map.insert("ten".to_string(), 10);
-        map.insert("eleven".to_string(), 11);
-        map.insert("twelve".to_string(), 12);
-        map.insert("thirteen".to_string(), 13);
-        map.insert("fourteen".to_string(), 14);
-        map.insert("fifteen".to_string(), 15);
-        map.insert("sixteen".to_string(), 16);
-        map.insert("seventeen".to_string(), 17);
-        map.insert("eighteen".to_string(), 18);
-        map.insert("nineteen".to_string(), 19);
 
         NumberMapping { map }
     }
@@ -47,14 +37,9 @@ impl NumberMapping {
 }
 
 fn part_two() {
-    let file_path = "./input/day1_1.txt";
-    let file = File::open(file_path).unwrap();
+    let input = include_str!("../input/day1_1.txt");
+    todo!();
 
-    // Create a buffered reader to efficiently read the file
-    let reader = BufReader::new(file);
-    // for line in reader.lines() {
-        
-    // }
 }
 
 
